@@ -1,3 +1,4 @@
+# Example entries only: replace all placeholder IDs with your real account details.
 google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0
 facebook.com, 000000000000000, DIRECT
 pangleglobal.com, 0000000, DIRECT
