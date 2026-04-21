@@ -1,4 +1,5 @@
-# Example entries only: replace all placeholder IDs with your real account details.
+# EXAMPLE ENTRIES ONLY — DO NOT DEPLOY AS-IS.
+# Replace all placeholder IDs with your real account details before publishing.
 google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0
 facebook.com, 000000000000000, DIRECT
 pangleglobal.com, 0000000, DIRECT
