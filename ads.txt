@@ -1,0 +1,10 @@
+# Google AdSense
+google.com, [YOUR_GOOGLE_PUBLISHER_ID], DIRECT, f08c47fec0942fa0
+
+# Facebook
+facebook.com, [YOUR_FACEBOOK_PUBLISHER_ID], DIRECT, c3e20eee3f780d68
+
+# Pangle
+pangle.media, [YOUR_PANGLE_PUBLISHER_ID], DIRECT, 0bfd66d529a55807
+
+# [ADD MORE AD NETWORKS HERE]
