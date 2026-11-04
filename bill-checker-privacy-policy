@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - BillCheck PK</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.65;
+            color: #333;
+            max-width: 860px;
+            margin: 0 auto;
+            padding: 24px 16px;
+            background-color: #f8f9fa;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 36px 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+            border: 1px solid #eef0f3;
+        }
+        h1 {
+            color: #1a1a1a;
+            font-size: 28px;
+            margin-top: 0;
+            padding-bottom: 12px;
+            border-bottom: 2px solid #0066cc;
+        }
+        h2 {
+            color: #222;
+            font-size: 20px;
+            margin-top: 32px;
+            margin-bottom: 12px;
+            padding-bottom: 6px;
+            border-bottom: 1px solid #eaeaea;
+        }
+        h3 {
+            color: #333;
+            font-size: 16px;
+            margin-top: 18px;
+            margin-bottom: 8px;
+        }
+        p {
+            margin-bottom: 14px;
+            color: #444;
+        }
+        ul {
+            margin-top: 6px;
+            margin-bottom: 16px;
+            padding-left: 24px;
+        }
+        li {
+            margin-bottom: 6px;
+            color: #444;
+        }
+        a {
+            color: #0066cc;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .meta-tag {
+            display: inline-block;
+            background-color: #e8f2ff;
+            color: #0052a3;
+            padding: 4px 10px;
+            border-radius: 6px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+        .alert-box {
+            background-color: #fff8e6;
+            border-left: 4px solid #ffb300;
+            padding: 14px 18px;
+            border-radius: 0 8px 8px 0;
+            margin: 20px 0;
+        }
+        .alert-box p {
+            margin: 0;
+            color: #664d03;
+            font-size: 14px;
+        }
+        .disclaimer-box {
+            background-color: #fdf2f2;
+            border-left: 4px solid #e53935;
+            padding: 14px 18px;
+            border-radius: 0 8px 8px 0;
+            margin: 20px 0;
+        }
+        .disclaimer-box p {
+            margin: 0;
+            color: #991b1b;
+            font-size: 14px;
+        }
+        .badge-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 16px 0;
+        }
+        .badge-table th, .badge-table td {
+            border: 1px solid #e5e7eb;
+            padding: 10px 14px;
+            text-align: left;
+            font-size: 14px;
+        }
+        .badge-table th {
+            background-color: #f3f4f6;
+            color: #1f2937;
+        }
+        .footer-note {
+            margin-top: 36px;
+            padding-top: 18px;
+            border-top: 1px solid #eaeaea;
+            font-size: 13px;
+            color: #6b7280;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <span class="meta-tag">Effective Date: November 2026</span>
+        <h1>Privacy Policy — BillCheck PK</h1>
+        <p>This privacy policy applies to the <strong>BillCheck PK</strong> mobile application (hereby referred to as "Application", "App", or "Service") for Android mobile devices, created and maintained by <strong>Digi Tools</strong> (hereby referred to as "Service Provider", "we", "us", or "our") as a free service with optional premium subscription enhancements. This Service is provided "AS IS".</p>
+
+        <div class="disclaimer-box">
+            <p><strong>IMPORTANT NON-AFFILIATION NOTICE:</strong> BillCheck PK is an independent third-party utility tracker. We are <strong>NOT affiliated with, endorsed by, sponsored by, or connected to the Government of Pakistan, NEPRA, OGRA, PTA, WAPDA, or any utility provider</strong> (e.g., LESCO, MEPCO, SNGPL, WASA, PTCL). The Application acts strictly as a web viewer/parser accessing publicly available online utility billing portals for personal consumer tracking.</p>
+        </div>
+
+        <h2>1. Information Collection and Storage</h2>
+        <p>The Application collects and processes information entered by you as well as diagnostic telemetry necessary to deliver utility bill tracking services.</p>
+
+        <h3>A. Utility Account & Billing Information</h3>
+        <p>To check, organize, and monitor your monthly bills, you may input utility account identifiers:</p>
+        <ul>
+            <li><strong>Consumer Numbers, Reference Numbers, Account IDs, and Meter Identifiers:</strong> Used strictly to fetch current and historical bill details from your respective utility provider's public web server.</li>
+            <li><strong>Retrieved Bill Data:</strong> Customer billing name, payable amount, due date, billing month, units consumed, tariff category, and raw bill slips.</li>
+        </ul>
+
+        <div class="alert-box">
+            <p><strong>ON-DEVICE LOCAL STORAGE (ROOM DATABASE):</strong> All your entered reference numbers, account nicknames, and downloaded bill slips are stored <strong>LOCALLY on your device</strong> in a sandboxed, encrypted SQLite database (`Room`). This allows you to view and review your bills completely offline. You retain total control: deleting any bill from your history immediately and permanently purges it from your device.</p>
+        </div>
+
+        <h3>B. Optional Cloud Backup & Account Data (Google Sign-In)</h3>
+        <p>Unlike basic offline-only apps, BillCheck PK offers an <em>optional</em> cloud backup feature. If you choose to sign in with your Google account:</p>
+        <ul>
+            <li>We collect your basic public profile information: Google Display Name, Email Address, Profile Picture URL, and unique Firebase User Identifier (`UID`).</li>
+            <li>Your saved bill reference numbers and basic summary metadata are synchronized with Google Cloud Firestore (`users/{uid}/bills`) to allow seamless multi-device restoration.</li>
+            <li>Full HTML bill copies remain stored exclusively on your device storage.</li>
+            <li><strong>Complete Data Deletion:</strong> You can permanently wipe your cloud backup and profile at any time directly within the app under <strong>Settings → Account → Delete Cloud Account & Data</strong>.</li>
+        </ul>
+
+        <h3>C. Automatically Collected Device & Technical Data</h3>
+        <p>When you use the Application, certain telemetry is automatically collected:</p>
+        <ul>
+            <li>Your device's Internet Protocol (IP) address (used solely for coarse regional localization and security).</li>
+            <li>Device hardware model, operating system version, carrier, and screen dimensions.</li>
+            <li>Application interaction telemetry (timestamps, visited screens, session duration).</li>
+        </ul>
+
+        <h2>2. Device Permissions Requested</h2>
+        <p>To provide its core utility viewing functions, the Application requires the following standard Android permissions:</p>
+        <table class="badge-table">
+            <thead>
+                <tr>
+                    <th>Permission</th>
+                    <th>Technical Identifier</th>
+                    <th>Purpose</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Internet Access</strong></td>
+                    <td><code>android.permission.INTERNET</code></td>
+                    <td>To fetch publicly available bill slips from utility provider web portals and sync cloud backups.</td>
+                </tr>
+                <tr>
+                    <td><strong>Network State</strong></td>
+                    <td><code>android.permission.ACCESS_NETWORK_STATE</code></td>
+                    <td>To check active connectivity before querying utility portals, avoiding unnecessary data usage.</td>
+                </tr>
+                <tr>
+                    <td><strong>Bill Notifications</strong></td>
+                    <td><code>android.permission.POST_NOTIFICATIONS</code></td>
+                    <td>Required on Android 13+ to deliver local bill due-date reminder alerts prior to payment deadlines.</td>
+                </tr>
+                <tr>
+                    <td><strong>Storage (Legacy)</strong></td>
+                    <td><code>android.permission.WRITE_EXTERNAL_STORAGE</code></td>
+                    <td>Used exclusively on Android 9 (API 28) and older when you explicitly choose to export or save a bill slip image or PDF.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>3. Third-Party Service Providers & Advertising</h2>
+        <p>Only aggregated, anonymized data is periodically transmitted to external services to aid the Service Provider in optimizing performance, maintaining security, and supporting free access.</p>
+
+        <h3>A. Advertising Networks (`adsModule`)</h3>
+        <p>For users on the free tier, third-party advertisements are displayed. These networks may process your Google Advertising ID (GAID), IP address, and ad interaction events:</p>
+        <ul>
+            <li><strong>Google AdMob:</strong> <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy & Terms</a></li>
+            <li><strong>Meta Audience Network (Facebook Ads):</strong> <a href="https://www.facebook.com/about/privacy/" target="_blank" rel="noopener">Meta Privacy Policy</a></li>
+            <li><strong>Google User Messaging Platform (UMP):</strong> Delivers European (GDPR/ePrivacy) consent choices, allowing users to customize tracking preferences.</li>
+        </ul>
+        <p><em>Users who upgrade to the Pro Plan enjoy a completely ad-free experience with third-party advertising modules disabled.</em></p>
+
+        <h3>B. Analytics, Crash Reporting & Quality</h3>
+        <ul>
+            <li><strong>Google Play Services & Firebase Analytics:</strong> Aggregated user journey tracking.</li>
+            <li><strong>Firebase Crashlytics:</strong> Automated capture of crash stack traces and device states to quickly resolve bugs.</li>
+            <li><strong>Firebase Remote Config:</strong> Dynamic app configuration management.</li>
+            <li><strong>UXCam:</strong> Diagnostic session replay and heatmap analysis to identify UI friction and navigational errors. UXCam does not record sensitive payment fields.</li>
+            <li><strong>PostHog:</strong> In-app product analytics and feature engagement.</li>
+        </ul>
+
+        <h3>C. Subscriptions & In-App Purchases</h3>
+        <p>In-app subscriptions (Standard Monthly, Pro Monthly) are managed through <strong>Google Play Billing</strong> and <strong>RevenueCat</strong>. We <strong>never collect, process, or store credit card numbers or banking information</strong>. Google Play processes all transactions in accordance with Google's secure financial standards.</p>
+
+        <h2>4. Background Due-Date Reminders (WorkManager)</h2>
+        <p>The Application includes an automated bill alert scheduler using Android WorkManager. This background task runs <strong>100% locally on your smartphone</strong>, comparing your device calendar clock against saved bill due dates to alert you before surcharges apply. No bill data is uploaded to external servers for this feature.</p>
+
+        <h2>5. Information Disclosure Policy</h2>
+        <p>The Service Provider may disclose User Provided and Automatically Collected Information only under the following limited circumstances:</p>
+        <ul>
+            <li>As required by law, such as to comply with a valid court subpoena or legal process;</li>
+            <li>When we believe in good faith that disclosure is necessary to protect our legal rights, ensure personal safety, investigate fraud, or comply with government requests;</li>
+            <li>With trusted infrastructure service providers (e.g., Google Firebase) who work on our behalf and have agreed to adhere strictly to this privacy policy.</li>
+        </ul>
+
+        <h2>6. Opt-Out & Data Deletion Rights</h2>
+        <p>You have full autonomy over your data:</p>
+        <ul>
+            <li><strong>Local Data:</strong> You can remove individual bills or clear your entire history in the app. Uninstalling the app permanently purges all local Room database entries.</li>
+            <li><strong>Cloud Data:</strong> Navigate to <strong>Settings → Account → Delete Cloud Account & Data</strong> to permanently wipe your cloud backup and Google profile association.</li>
+            <li><strong>Email Request:</strong> You may also request deletion by contacting us at <a href="mailto:digitools.it@gmail.com">digitools.it@gmail.com</a>.</li>
+        </ul>
+
+        <h2>7. Children's Privacy</h2>
+        <p>The Application does not knowingly solicit data from or market to children under the age of 13. If the Service Provider discovers that personal information has been provided by a child under 13, it will be deleted immediately. Parents or guardians may contact us at <a href="mailto:digitools.it@gmail.com">digitools.it@gmail.com</a> to request immediate action.</p>
+
+        <h2>8. Security Safeguards</h2>
+        <p>The Service Provider provides commercial-grade physical, electronic, and procedural safeguards to protect the confidentiality of your data, including HTTPS/TLS network encryption and sandboxed local application storage.</p>
+
+        <h2>9. Policy Updates</h2>
+        <p>This Privacy Policy may be updated periodically. Any modifications will be published on this web page. Continued use of the Application after revisions constitutes acceptance of the updated policy.</p>
+
+        <h2>10. Contact Us</h2>
+        <p>If you have any questions or feedback regarding this Privacy Policy or your data rights, please contact the Service Provider:</p>
+        <p>
+            <strong>Digi Tools</strong><br>
+            Website: <a href="https://digitools.me" target="_blank" rel="noopener">https://digitools.me</a><br>
+            Email: <a href="mailto:digitools.it@gmail.com">digitools.it@gmail.com</a>
+        </p>
+
+        <div class="footer-note">
+            &copy; 2026 Digi Tools. All rights reserved. BillCheck PK is an independent utility monitoring tool.
+        </div>
+    </div>
+</body>
+</html>
